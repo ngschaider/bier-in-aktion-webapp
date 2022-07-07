@@ -1,0 +1,7 @@
+#content-section {
+    width: 90%;
+    float: right;
+
+    display: grid;
+    grid-template-columns: 3;
+}
