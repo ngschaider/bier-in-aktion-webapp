@@ -23,7 +23,7 @@ function ProductCard(props: ProductCardProps) {
                         <span className='product-card--original-price'>€{ product.originalPrice } » </span>
                         <span className='product-card--discount-price'>€{ product.discountPrice }</span>
                     </div>
-                    <p className='product-card--discont-percent' style={{ backgroundColor: product.discountColor }}>-{ product.discountPercentage }%</p>
+                    <p className='product-card--discount-percent' style={{ backgroundColor: product.discountColor }}>-{ product.discountPercentage }%</p>
                 </div>
             </div>
 
