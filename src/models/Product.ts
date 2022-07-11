@@ -1,5 +1,3 @@
-import './components/App.css';
-
 class Product {
     id: number;
     brand: string;

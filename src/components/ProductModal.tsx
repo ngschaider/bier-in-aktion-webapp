@@ -1,6 +1,6 @@
-import './ProductCardDetailed.css';
+import './ProductModal.css';
 
-function ProductCardDetailed(props: any) {
+function ProductModal(props: any) {
     const { product } = props;
 
     return (
@@ -42,4 +42,4 @@ function ProductCardDetailed(props: any) {
     )
 };
 
-export default ProductCardDetailed;
+export default ProductModal;

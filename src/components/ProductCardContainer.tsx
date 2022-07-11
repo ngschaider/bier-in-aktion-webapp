@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProductCardDetailed from './ProductCardDetailed';
+import ProductModal from './ProductModal';
 import ProductCard from './ProductCard';
 
 function ProductCardContainer(props: any) {
@@ -14,7 +14,7 @@ function ProductCardContainer(props: any) {
         <>
             {
                 showDetailed && (
-                    <ProductCardDetailed
+                    <ProductModal
                         product={ product }
                         onClick={ handleClick }
                     />
