@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProductCardDetailed.css';
 
 function ProductCardDetailed(props: any) {

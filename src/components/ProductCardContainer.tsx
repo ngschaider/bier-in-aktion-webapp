@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import ProductCardDetailed from './ProductCardDetailed';
 import ProductCard from './ProductCard';
 

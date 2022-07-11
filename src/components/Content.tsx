@@ -1,10 +1,9 @@
+import './Content.css';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCTS } from '../GraphQL';
 import ProductCardContainer from './ProductCardContainer';
-import Product from '../Product';
+import Product from '../models/Product';
 
-import './App.css'
-import './Content.css';
 
 function Content() {
     const { loading, data } = useQuery(GET_PRODUCTS);
