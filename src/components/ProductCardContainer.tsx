@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ProductModal from './ProductModal';
 import ProductCard from './ProductCard';
 
-function ProductCardContainer(props: any) {
+const ProductCardContainer = (props: any) => {
     const { product } = props;
     const [showDetailed, setShowDetailed] = useState(false); 
 

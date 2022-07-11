@@ -1,6 +1,6 @@
 import './ProductModal.css';
 
-function ProductModal(props: any) {
+const ProductModal = (props: any) => {
     const { product } = props;
 
     return (
@@ -13,7 +13,7 @@ function ProductModal(props: any) {
 
                     <div className='product-card-detailed-side'>
                         <div className='p-detailed-side-img'>
-                            <img src='https://at.cat-ret.assets.lidl/catalog5media/at/article/11070718/gallery/overlay/lg/11070718.jpg' />
+                            <img src='https://at.cat-ret.assets.lidl/catalog5media/at/article/11070718/gallery/overlay/lg/11070718.jpg' alt={product.market.name}/>
                         </div>
                         <div className='p-detailed-side-description'>
                             <h3>Produktbeschreibung:</h3>
@@ -23,7 +23,7 @@ function ProductModal(props: any) {
 
                     <div className='product-card-detailed-body'>
                         <div className='p-detailed-body-title'>
-                            <img src="https://www.vinyl-music.at/wp-content/uploads/2017/06/Stiegl_Logo_Wappen_4cneu.jpg" />
+                            <img src="https://www.vinyl-music.at/wp-content/uploads/2017/06/Stiegl_Logo_Wappen_4cneu.jpg" alt={product.brand + " " + product.name} />
                             <div>
                                 <h1 className='p-detailed-card--brand'>{ product.brand }</h1>
                                 <h2 className='p-detailed-card--name'>{ product.name }</h2>

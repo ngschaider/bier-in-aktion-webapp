@@ -5,9 +5,11 @@ import ProductCardContainer from './ProductCardContainer';
 import Product from '../models/Product';
 
 
-function Content() {
+const Content = () => {
     const { loading, data } = useQuery(GET_PRODUCTS);
-    if(loading) return (<div />);
+
+    if(loading) return <div />;
+
     const products = data.getProducts;
 
     return (
@@ -22,6 +24,6 @@ function Content() {
             }
         </section>
     );
-  }
-  
-  export default Content;  
+}
+
+export default Content;  

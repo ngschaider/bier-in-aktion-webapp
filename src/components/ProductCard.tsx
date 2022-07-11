@@ -6,7 +6,7 @@ type ProductCardProps = {
     onClick: () => void;
 }
 
-function ProductCard(props: ProductCardProps) {
+const ProductCard = (props: ProductCardProps) => {
     const { product } = props;
 
     return (
@@ -16,7 +16,7 @@ function ProductCard(props: ProductCardProps) {
             </div>
             <div className='product-card-side'>
                 <div className='product-side-image'>
-                    <img src='https://at.cat-ret.assets.lidl/catalog5media/at/article/11070718/gallery/overlay/lg/11070718.jpg' />
+                    <img src='https://at.cat-ret.assets.lidl/catalog5media/at/article/11070718/gallery/overlay/lg/11070718.jpg' alt={product.brand + " " + product.name} />
                 </div>
                 <div className='product-side-prices'>
                     <div>

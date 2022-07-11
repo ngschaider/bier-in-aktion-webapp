@@ -1,6 +1,6 @@
 import './Header.css';
 
-function Header() {
+const Header = () => {
 	return (
 		<header>
 			<h1>Bier in Aktion</h1>
