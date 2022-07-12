@@ -5,7 +5,7 @@ import App from "./components/App";
 import './components/App.css';
 
 const httpLink = createHttpLink({
-    uri: 'http://212.95.26.166:5000'
+    uri: process.env.REACT_APP_SERVER_URL
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
