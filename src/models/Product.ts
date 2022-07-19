@@ -14,8 +14,8 @@ class Product {
         this.id = obj.id;
         this.brand = obj.brand;
         this.name = obj.name;
-        this.originalPrice = obj.originalPrice;
-        this.discountPrice = obj.discountPrice;
+        this.originalPrice = this.convertDoubleDigits(obj.originalPrice);
+        this.discountPrice = this.convertDoubleDigits(obj.discountPrice);
         this.description = obj.description;
         this.market = obj.market;
         this.startDate = new Date(obj.startDate);
@@ -23,12 +23,16 @@ class Product {
         this.additionalInfo = obj.additionalInfo;
     }
     
+    public convertDoubleDigits(num: number) {
+        return (Math.round(num * 100) / 100);
+    }
+
     public get availability() {
         return 'Verfügbar von ' + this.startDate.toDateString() + ' bis ' + this.endDate.toDateString();
     }
 
     public get discountPercentage() {
-        return Math.round((100 - (this.discountPrice / this.originalPrice * 100)) * 100) / 100;
+        return this.convertDoubleDigits(100 - (this.discountPrice / this.originalPrice * 100));
     }
 
     public get discountColor() {

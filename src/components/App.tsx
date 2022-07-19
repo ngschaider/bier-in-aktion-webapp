@@ -1,18 +1,20 @@
+import Sidebar from './Sidebar';
+import OptionMenu from './OptionMenu';
+import ProductGrid from './ProductGrid';
 import './App.css';
-import Header from './Header';
-import Content from './Content';
-import MySidebar from './Sidebar';
 
 const App = () => {
   
   return (
     <>
       <main>
-        <MySidebar>
-          <section id="content-section">
-            <Content />
-          </section>
-        </MySidebar>
+        <section id="sidebar-section">
+          <Sidebar />
+        </section>
+        <section id="content-section">
+          <OptionMenu />
+          <ProductGrid />
+        </section>
       </main>
     </>
   );

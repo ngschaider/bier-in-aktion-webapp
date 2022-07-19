@@ -1,11 +1,10 @@
-import './Content.css';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCTS } from '../GraphQL';
 import ProductCardContainer from './ProductCardContainer';
 import Product from '../models/Product';
+import './ProductGrid.css';
 
-
-const Content = () => {
+const ProductGrid = () => {
     const { loading, data } = useQuery(GET_PRODUCTS);
 
     if(loading) return <div />;
@@ -13,7 +12,7 @@ const Content = () => {
     const products = data.getProducts;
 
     return (
-        <section id="products-section">
+        <section id="product-section">
             {
                 products.map((product: any) => (
                     <ProductCardContainer
@@ -26,4 +25,4 @@ const Content = () => {
     );
 }
 
-export default Content;  
+export default ProductGrid;  

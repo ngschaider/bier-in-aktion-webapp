@@ -1,7 +1,15 @@
-#content-section {
-    width: 90%;
-    float: right;
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
-    display: grid;
-    grid-template-columns: 3;
+section#sidebar-section {
+    width: 200px;
+    height: 100%;
+}
+
+section#content-section {
+    width: calc(100vw - 250px);
+    height: auto;
 }

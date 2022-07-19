@@ -1,5 +1,5 @@
-import './ProductCard.css';
 import Product from '../models/Product';
+import './ProductCard.css';
 
 type ProductCardProps = {
     product: Product;

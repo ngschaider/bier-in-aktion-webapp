@@ -1,0 +1,12 @@
+section#option-section {
+    width: 100%;
+    position: fixed;
+    background-color: var(--background-color);
+    z-index: 5;
+    padding: 35px;
+}
+
+select.select-container {
+    display: none;
+    border-radius: 4px;
+}

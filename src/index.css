@@ -1,6 +1,7 @@
 :root {
     --primary-color: #012a4a/*#182541*//*#14213d*/;
     --secondary-color: #fca311;
+    --background-color: #f8fafb;
     
     --light-gray: #f5f3f4;
     
@@ -21,7 +22,7 @@ body,
 }
 
 body {
-    background-color: #f8fafb;
+    background-color: var(--background-color);
 }
 
 h1 {

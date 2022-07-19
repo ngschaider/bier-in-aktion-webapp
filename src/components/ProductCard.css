@@ -31,6 +31,7 @@ div.product-card {
     box-shadow: 0 0 .625em .0625em rgba(0, 0, 0, .6);
     transition: transform 750ms cubic-bezier(0, .09, 0, .96);
 
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
@@ -71,6 +72,7 @@ div.product-card-side > div.product-side-image {
 
 div.product-card-side > div.product-side-prices {
     height: 40%;
+    width: 100%;
 }
 
 div.product-card-side > div.product-side-image > img {
